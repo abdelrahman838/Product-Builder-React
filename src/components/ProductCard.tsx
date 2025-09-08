@@ -1,10 +1,13 @@
-
+import Image from "./Image"
 
 
 const ProductCard = () =>{
   return(
     <div className="border border-black text-black rounded-md p-3 flex flex-col">
-      <img src="https://cdn.pixabay.com/photo/2025/08/11/07/18/nurturing-swan-9767495_1280.jpg" alt="product photo" />
+      <Image
+      imageURL="https://cdn.pixabay.com/photo/2025/08/11/07/18/nurturing-swan-9767495_1280.jpg"
+      alt= {"Product name"}
+      />
 
       <h3>Product Card</h3>
       <p>Lorem, ipsum dolor.</p>
