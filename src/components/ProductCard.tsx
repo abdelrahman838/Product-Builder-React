@@ -2,11 +2,11 @@ import Image from "./Image"
 import Button from "./ui/Button"
 
 
-const ProductCard = () =>{
+const ProductCard = () => {
   return(
     <div className="border border-black text-black rounded-md p-3 flex flex-col">
       <Image
-      imageURL="https://cdn.pixabay.com/photo/2025/08/11/07/18/nurturing-swan-9767495_1280.jpg"
+      imageURL= "https://cdn.pixabay.com/photo/2025/08/11/07/18/nurturing-swan-9767495_1280.jpg"
       alt= {"Product name"}
       />
 
@@ -20,7 +20,7 @@ const ProductCard = () =>{
       </div>
 
       <div className="flex items-center justify-between">
-        <span>500,000</span>
+        <span>price</span>
         <img className="w-10 h-10 rounded-full" src="https://cdn.pixabay.com/photo/2025/08/11/07/18/nurturing-swan-9767495_1280.jpg" alt="product photo" />
       </div>
 
