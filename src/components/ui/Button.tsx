@@ -6,9 +6,9 @@ interface IProps{
 }
 
 
-const Button = ({children ,className}: IProps) => {
+const Button = ({children ,className, ...rest}: IProps) => {
   return (
-    <button className={`${className} w-full rounded-md p-2 cursor-pointer`}>{children}</button>
+    <button className={`${className} w-full rounded-md p-2 cursor-pointer`} {...rest}>{children}</button>
   )
 }
 

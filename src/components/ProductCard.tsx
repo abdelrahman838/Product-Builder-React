@@ -1,17 +1,21 @@
+import type { Iproduct } from "../interfaces"
 import Image from "./Image"
 import Button from "./ui/Button"
 
+interface Iprops{
+  product:Iproduct
+}
 
-const ProductCard = () => {
+const ProductCard = ({product}:Iprops) => {
   return(
     <div className="border border-black text-black rounded-md p-3 flex flex-col">
       <Image
-      imageURL= "https://cdn.pixabay.com/photo/2025/08/11/07/18/nurturing-swan-9767495_1280.jpg"
-      alt= {"Product name"}
+      imageURL= {product.imageURL}
+      alt= {`${product.title} photo`}
       />
 
-      <h3>Product Card</h3>
-      <p>Lorem, ipsum dolor.</p>
+      <h3>{product.title}</h3>
+      <p>{product.description}</p>
 
       <div className="flex items-center my-4 space-x-2">
         <span className="w-5 h-5 bg-indigo-600 rounded-full"></span>
@@ -20,7 +24,7 @@ const ProductCard = () => {
       </div>
 
       <div className="flex items-center justify-between">
-        <span>price</span>
+        <span>{product.price} EGP</span>
         <img className="w-10 h-10 rounded-full" src="https://cdn.pixabay.com/photo/2025/08/11/07/18/nurturing-swan-9767495_1280.jpg" alt="product photo" />
       </div>
 
