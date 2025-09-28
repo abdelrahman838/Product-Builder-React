@@ -29,7 +29,7 @@ const ProductCard = ({product}:Iprops) => {
       </div>
 
       <div className="flex items-center justify-between space-x-2 my-5">
-        <Button className="bg-indigo-700">EDIT</Button>
+        <Button className="bg-indigo-700">EDIT</Button >
         <Button className="bg-red-700">DELETE</Button>
       </div>
     </div>
