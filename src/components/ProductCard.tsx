@@ -1,4 +1,5 @@
 import type { Iproduct } from "../interfaces"
+import { txtSlicer } from "../utils/functions"
 import Image from "./Image"
 import Button from "./ui/Button"
 
@@ -15,7 +16,7 @@ const ProductCard = ({product}:Iprops) => {
       />
 
       <h3>{product.title}</h3>
-      <p>{product.description}</p>
+      <p>{txtSlicer(product.description)}</p>
 
       <div className="flex items-center my-4 space-x-2">
         <span className="w-5 h-5 bg-indigo-600 rounded-full"></span>
