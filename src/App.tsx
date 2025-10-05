@@ -1,5 +1,6 @@
 import './App.css'
 import ProductCard from './components/ProductCard'
+import Modal from './components/ui/Modal'
 import { productList } from './data'
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
         {renderProductList}
       </div>
     </main>
+    <Modal></Modal>
     </>
   )
 }
